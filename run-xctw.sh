@@ -1,5 +1,6 @@
 #!/bin/bash
-#docker build -t jeh/xtcw xtcw
+docker build -t jeh/gcc gcc
+docker build -t jeh/xtcw xtcw
 XSOCK=/tmp/.X11-unix
 XAUTH=/tmp/.docker.xauth
 xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
